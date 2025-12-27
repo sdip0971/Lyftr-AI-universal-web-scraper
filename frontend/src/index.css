@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-dark-950 text-dark-200;
+}
+
+/* Custom Scrollbar for the whole page and JSON viewer */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-dark-900;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-dark-700 rounded-full border-2 border-dark-900;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-dark-400;
+}
